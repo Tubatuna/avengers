@@ -1,0 +1,152 @@
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-image:url(/büyükresim.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    background-color:rgba(17, 17, 45, 0.362) ;
+display:flex;
+justify-content: space-between;
+padding: 5px;
+
+}
+
+.header h1{
+    font-size: 40px;
+    color:rgba(228, 168, 29, 0.838);
+    font-weight: 700px;
+ 
+}
+
+
+    .nav-bar ul li{
+        float:left;
+        list-style: none;
+        padding:10px;
+        font-size: 20px;
+        color:whitesmoke;
+        font-weight: 500px;
+        font-style: italic; 
+        text-shadow: 3px 3px 10px #7bc5f3;       
+    }
+
+    .nav-bar ul li:hover{
+        color:rgba(228, 168, 29, 0.838);
+    }
+
+
+    .historia{
+        display:flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+
+    .historia h2{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        
+    
+    }
+
+    .yazi-1{
+        display: flex;
+        margin:20px 200px;
+        font-weight: 100px;
+   
+    }
+
+    .yazi-1 p{
+        opacity: 0.8;
+        margin-right: 30px;
+        line-height: 50px;
+        
+    }
+    .yazi-2{
+        display: flex;
+        margin:20px 200px;
+        font-weight: 100px;
+   
+    }
+
+    .yazi-2 p{
+        opacity: 0.8;
+        margin-left: 30px;
+        line-height: 50px;
+    }
+
+    .habilidade{
+        background-color: black;
+        opacity:0.8;
+        
+
+            }
+            .habilidade  ul{
+                color:white;
+            }
+            .habilidade  h2{
+                color:white;
+                text-align: center;
+                text-shadow: 3px 3px 10px #7bc5f3;
+                margin-top: 20px;
+    
+            }
+
+            .icerik{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .icerik ul li{
+                padding:10px;
+                display: flex;
+                align-items: center;
+                margin:1S0px;
+            }
+            .icerik ul{
+                margin-top:30px;
+            }
+
+            .icerik img{
+                display: flex;
+                align-items: center;
+                background-color: black;
+                height:200px;
+                margin-top: 20px;
+
+            }
+
+            .resim{
+                background-color: black;
+                margin:10px;
+                padding:20px;
+            }
+
+            footer{
+                background-color: rgb(35, 34, 34);
+                display: flex;
+                padding:15px;
+                justify-content: space-between;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                
+            }
+            footer p{
+                color:rgba(228, 168, 29, 0.838);
+               justify-content: space-evenly;
+                text-shadow: 3px 3px 10px #7bc5f3;
+
+            }
