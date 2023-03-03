@@ -3,10 +3,29 @@
    margin:0;
    padding:0;
 }
+.header{
+    grid-area: header;
+}
+.historia{
+    grid-area: historia;
+}
+.habildade{
+    grid-area: habildade;
+}
+.icerik{
+    grid-area: icerik;
+}
+.footer{
+    grid-area: footer;
+}
 body{
-    display:flex;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 'header'
+        'historia'
+        'habildade'
+        'icerik'
+        'footer';
+    grid-template-rows: 100vh auto auto 30px;
 }
 header{
     background-image:url(/büyükresim.jfif);
@@ -61,6 +80,13 @@ padding: 5px;
     
     }
 
+    .historia img{
+        width:180px;
+        height:200px;
+        border: 1px solid whitesmoke;
+
+    }
+
     .yazi-1{
         display: flex;
         margin:20px 200px;
@@ -72,12 +98,16 @@ padding: 5px;
         opacity: 0.8;
         margin-right: 30px;
         line-height: 50px;
+        border:1px solid whitesmoke;
+
         
     }
     .yazi-2{
         display: flex;
         margin:20px 200px;
         font-weight: 100px;
+        border:1px solid whitesmoke;
+        
    
     }
 
@@ -148,5 +178,51 @@ padding: 5px;
                 color:rgba(228, 168, 29, 0.838);
                justify-content: space-evenly;
                 text-shadow: 3px 3px 10px #7bc5f3;
+
+            }
+
+            @media(max-width:768px){
+                header{
+                    background-position:cover;
+                    background-image: url(büyükresim.jfif);
+                    background-attachment:unset;
+                }
+                .nav-bar ul{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .nav-bar ul li{
+            
+                    list-style: none;
+                    padding:10px;
+                    font-size: 12px;
+                    color:whitesmoke;
+                    font-weight: 500px;
+                    font-style: italic; 
+                    text-shadow: 3px 3px 10px #7bc5f3;       
+                }
+                .header h1{
+                    font-size: 20px;
+                    color:rgba(228, 168, 29, 0.838);
+                    font-weight: 500px;}
+
+                  .historia, .habilidade{
+                    /* display:flex;
+                    flex-direction: row; */
+                    width: 100%;
+                    height: 400px;
+                  }
+                  .historia img{
+                    height: 100px;
+                    width: 50%;
+                  }
+                  .historia p{
+                    font-size: 12px;
+                    line-height: 10px;
+                    margin:5px;
+                    text-align: justify;
+                    
+                    
+                  }
 
             }
